@@ -1,0 +1,28 @@
+#####################################################################
+#  __   __                    ____                                  #
+# /\ \ /\ \                  /\  _`\                                #
+# \ `\`\/'/'      __     ___ \ \,\L\_\   __  __     ___      ___    #
+#  `\/ > <      /'__`\ /' _ `\\/_\__ \  /\ \/\ \  /' _ `\   /'___\  #
+#     \/'/\`\  /\  __/ /\ \/\ \ /\ \L\ \\ \ \_\ \ /\ \/\ \ /\ \__/  #
+#     /\_\\ \_\\ \____\\ \_\ \_\\ `\____\\/`____ \\ \_\ \_\\ \____\ #
+#     \/_/ \/_/ \/____/ \/_/\/_/ \/_____/ `/___/> \\/_/\/_/ \/____/ #
+#                                            /\___/                 #
+#                                            \/__/                  #
+#####################################################################
+
+### PLUGIN INFO ###
+name: XenSync
+version: 1.0.21
+description: Provides a bridge between Minecraft and XenForo
+author: L33t
+authors: [Briggybros]
+
+### TECHNICAL STUFF ###
+main: com.l33tnetwork.xensync.XenSync
+depend: [Vault]
+
+### COMMANDS ###
+commands:
+  member:
+    description: Allow a user to become a member on the server
+    usage: /member

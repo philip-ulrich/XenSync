@@ -1,0 +1,15 @@
+xenforo-mysql-uri: localhost/database
+xenforo-mysql-user: user
+xenforo-mysql-pass: pass
+#Would you like to use the xenforo username? (defaults to false)
+use-username: false
+#If you are not using the username, what field on the user's xenforo profile should we check?.
+minecraft-name-field: minecraft_name
+#Want debug messages?
+debug: false
+#Enable member feature?
+member-feature:
+  enable: true
+  require-valid-email: true
+  default-group-name: default
+  command-to-run: "/pex user %player% group set member"
