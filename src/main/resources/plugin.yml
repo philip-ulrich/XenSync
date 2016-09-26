@@ -12,7 +12,7 @@
 
 ### PLUGIN INFO ###
 name: XenSync
-version: 1.0.21
+version: 1.0.22
 description: Provides a bridge between Minecraft and XenForo
 author: L33t
 authors: [Briggybros]
@@ -25,4 +25,7 @@ depend: [Vault]
 commands:
   member:
     description: Allow a user to become a member on the server
-    usage: /member
+    usage: "/member"
+  register:
+    description: Allow a user register on the forums from the server
+    usage: "/register [email] [username]"

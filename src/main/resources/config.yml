@@ -1,15 +1,46 @@
-xenforo-mysql-uri: localhost/database
-xenforo-mysql-user: user
-xenforo-mysql-pass: pass
-#Would you like to use the xenforo username? (defaults to false)
-use-username: false
-#If you are not using the username, what field on the user's xenforo profile should we check?.
-minecraft-name-field: minecraft_name
-#Want debug messages?
-debug: false
-#Enable member feature?
+#####################################################################
+#  __   __                    ____                                  #
+# /\ \ /\ \                  /\  _`\                                #
+# \ `\`\/'/'      __     ___ \ \,\L\_\   __  __     ___      ___    #
+#  `\/ > <      /'__`\ /' _ `\\/_\__ \  /\ \/\ \  /' _ `\   /'___\  #
+#     \/'/\`\  /\  __/ /\ \/\ \ /\ \L\ \\ \ \_\ \ /\ \/\ \ /\ \__/  #
+#     /\_\\ \_\\ \____\\ \_\ \_\\ `\____\\/`____ \\ \_\ \_\\ \____\ #
+#     \/_/ \/_/ \/____/ \/_/\/_/ \/_____/ `/___/> \\/_/\/_/ \/____/ #
+#                                            /\___/                 #
+#                                            \/__/                  #
+#####################################################################
+
+#####################################################################
+####### FOR MORE INFORMATION ON CONFIG, CHECK THE PLUGIN PAGE: ######
+######### https://www.spigotmc.org/resources/xensync.29535/ #########
+#####################################################################
+
+### XENFORO CONNECTION DETAILS ###
+database-info:
+  xenforo-mysql-uri: localhost/database
+  xenforo-mysql-user: user
+  xenforo-mysql-pass: pass
+
+### GENERAL XENSYNC OPTIONS ###
+options:
+  #ENABLE DEBUG MESSAGES
+  debug: false
+  #WHAT FIELD WOULD YOU LIKE TO USE TO CHECK USERNAME
+  username-option:
+    use-username: false
+    #IF USING CUSTOM FIELD, SET USE-USERNAME TO FALSE
+    custom-field: minecraft_name
+
+### REGISTRATION INTEGRATION ###
+# Requires https://xenforo.com/community/resources/xenapi-xenforo-php-rest-api.902/
+xenforo-registration:
+  enable: false
+  api-location: https://www.myxenforo.com/api.php
+  api-key: My.Super.Long.Secret.Key.Set.Within.The.API.File
+
+### MEMBER PROMOTION FEATURE ###
 member-feature:
-  enable: true
+  enable: false
   require-valid-email: true
   default-group-name: default
   command-to-run: "/pex user %player% group set member"
