@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.l33tnetwork.xensync</groupId>
   <artifactId>XenSync</artifactId>
-  <version>1.0.22-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
   <name>XenSync</name>
   <description>Provides a bridge between Minecraft and XenForo</description>
 
